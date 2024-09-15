@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../imagenes/LOGO.png" alt="logo" height="54">
+        </div>
+        <nav id="navegador">
+            <ul class="lista">
+                <li class="boton-inicio"><a href="../index.html">Inicio</a></li>
+                <li class="boton-sobremi"><a href="./sobremi.html">Sobre mi</a></li>
+                <li class="boton-porfolio"><a href="./porfolio.html">Porfolio</a></li>
+                <li class="boton-servicios"><a href="./servicios.html">Servicios</a></li>
+                <li class="boton-contacto"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1>CONTACTO</h1>
+
+            <div class="contenedor">
+                <form id="formulario" action="mailto:ayelen.hassan@davinci.edu.ar">
+
+
+
+
+                    <div class="row">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" placeholder="Apellido">
+
+
+
+                    </div>
+
+
+
+
+                    <div class="row">
+
+
+                        <input type="text" name="email" placeholder="E-mail">
+
+                        <input type="tel" name="telefono" placeholder="Telefono">
+                    </div>
+
+
+                    <div class="row">
+                       
+                        <select type="text" name="sexo" placeholder="Sexo">
+                            <option>Sexo</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+
+
+
+
+                    <div class="escribir-mensaje">
+                        <textarea id="subject" name="subject" placeholder="Escribir mensaje"></textarea>
+                    </div>
+
+
+                    <label for="ifecha" class="fecha-nacimiento"> Fecha de nacimiento </label>
+                    <input id="ifecha" type="date" name="fecha" class="altura">
+
+                    <div class="row">
+                        <input id="radio" type="checkbox" name="check">
+                        <label for="iradio"> He leido y acepto términos y condiciones </label>
+                    </div>
+
+
+                    <div class="botones">
+                        <div class="enviar">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+    
+                        <div class="resetear">
+                            <input type="reset" value="RESETEAR">
+                        </div>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        <div>
+            <div>
+                <div>
+                    <p> Ayelén Hassan - site 2024</p>
+                </div>
+                <div class="redes">
+                    <ul class="lista flex">
+                        <li>
+                            <a href="https://www.instagram.com/hassuar_?igsh=ZXkza2c5aTh6eGN3" target="blank">
+                                <img src="../imagenes/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.behance.net/ayelen_hassan" target="blank">
+                                <img src="../imagenes/behance.png" alt="behance">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/ayelen-hassan/" target="blank">
+                                <img src="../imagenes/linkedin.png" alt="linkedin">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:ayelen.hassan@davinci.edu.ar" target="_blank">
+                                <img src="../imagenes/mail.png" alt="mail">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

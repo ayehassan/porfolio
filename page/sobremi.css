@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/sobre-mi.png);
+    background-color: #1e1e1e;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+
+.logo {
+    width: 54px;
+}
+
+#navegador ul {
+    display: flex;
+    list-style: none;
+}
+
+#navegador a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+#navegador a:hover {
+    color: #6f41ff;
+}
+
+
+
+
+
+
+
+
+main {
+    flex: 1 0 auto;
+    padding-top: 20px; /* Ajusta este valor según sea necesario */
+}
+
+
+
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 90%;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    color: #ffffff;
+    margin-right: 15%;
+    margin-bottom: 5%;
+
+}
+
+.boton-cv {
+    background-color: #6f41ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.boton-cv a {
+    color: #1e1e1e; 
+    text-decoration: none; 
+}
+
+.boton-cv a:hover {
+    color: #6f41ff;
+    transition: all 0.3s all;
+}
+
+.boton-cv:hover {
+    background-color: #1e1e1e;
+    color: #6f41ff;
+    box-shadow: 0 4px 10px 0 #6f41ff, 0 0px 10px 0 #6f41ff;
+}
+
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.redes li {
+    margin: 0 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        }
+    .container {
+        align-items: center;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+    
+    .boton-cv {
+        margin-left: 35%;
+    }
+
+    #navegador ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-flex{
+        flex-direction: column
+    }
+
+    #navegador a {
+        margin: 5px 0;
+    }
+
+    body {
+        background-size: 50%;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    
+}
